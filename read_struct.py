@@ -3,10 +3,11 @@ import struct
 import time
 
 # Define the I2C address of the Arduino
-arduino_address = 8  # Make sure it matches the Arduino's I2C address
+arduino_address = 3*16 # Make sure it matches the Arduino's I2C address
 struct_size = 40
 # Define the struct format to match the Arduino's struct
 struct_format = 'ff ffff ff Q'
+
 
 # Function to read the SensorData struct from Arduino
 def read_sensor_data():
