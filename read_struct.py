@@ -19,7 +19,7 @@ def read_sensor_data():
 
         # Unpack the received data into the SensorData struct
         sensor_data = struct.unpack(struct_format, bytearray(raw_data))
-
+#comment
         # Close the I2C bus
         bus.close()
 
